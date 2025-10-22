@@ -42,7 +42,7 @@ jobs:
         run: xvfb-run poetry run pytest -m hypothesis --hypothesis-profile=ci
         shell: bash
       - name: Create Issue on Failure
-        uses: nashmaniac/create-issue-action@v1.1
+        uses: nashmaniac/create-issue-action@v1.2
         if: failure()
         with:
           title: Hypothesis tests failed
